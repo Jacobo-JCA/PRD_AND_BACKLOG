@@ -20,3 +20,13 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 - Validación de datos de entrada antes de realizar cálculos.
 - Mostrar un resumen del cálculo al usuario antes de generar el documento.
 - Generación de un documento PDF con el desglose salarial.
+
+### OUT
+- Integración con sistemas contables externos.
+- Soporte para múltiples monedas o configuraciones por país.
+- Notificaciones por correo electrónico al empleado.
+- Historial completo de nóminas por empleado.
+- Exportación a Excel o generación de reportes avanzados.
+- Autenticación y gestión de roles de usuario.
+- Cálculo de horas extra, ausencias o descuentos adicionales.
+
