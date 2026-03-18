@@ -7,9 +7,9 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 
 ## Objetivos
 * Automatizar el cálculo del salario neto de los empleados a partir de su salario bruto, eliminando la dependencia de procesos manuales en Excel.
-* Reducir errores en el cálculo de deducciones e incentivos que actualmente ocurren en procesos manuales.
+* Permitir revisar y corregir la información del empleado antes de procesar el cálculo, para garantizar que los datos sean correctos desde el inicio.
 * Facilitar el cálculo de nómina considerando distintos tipos de contrato laboral (tiempo completo, medio tiempo y freelance).
-* Brindar al equipo de Recursos Humanos un desglose detallado del cálculo para validar los resultados antes de emitir el documento final.
+* Mostrar un desglose detallado del cálculo para validar los resultados antes de emitir el documento final.
 
 ## Alcance del MVP
 ### IN (MVP Scope)
