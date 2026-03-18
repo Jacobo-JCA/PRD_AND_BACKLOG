@@ -14,12 +14,11 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 ## Alcance del MVP
 ### IN (MVP Scope)
 - Registrar la información básica del empleado necesaria para el cálculo de nómina.
-- Ingresar el salario bruto mensual del empleado que será utilizado como base para cálculos de nómina.
-- Calcular automáticamente deducciones por impuestos según tipo de contrato.
-- Aplicar automáticamente una bonificación al salario bruto según el tipo de contrato.
-- Validación de datos de entrada antes de realizar cálculos.
-- Mostrar un resumen del cálculo al usuario antes de generar el documento.
-- Generación de un documento PDF con el desglose salarial.
+- Permitir al usuario corregir los datos ingresados antes de procesar el cálculo.
+- Calcular el salario neto del empleado según su tipo de contrato.
+- Mostrar el resultado del cálculo para que el usuario lo confirme antes de generar el documento.
+- Generar un documento PDF descargable con el desglose completo del salario neto.
+
 
 ### OUT
 - Integración con sistemas contables externos.
