@@ -30,3 +30,7 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 - Autenticación y gestión de roles de usuario.
 - Cálculo de horas extra, ausencias o descuentos adicionales.
 
+## Riesgos de Negocio:
+- Si la ley cambia los porcentajes de impuestos o bonos y nadie actualiza el sistema, los recibos van a estar mal y la empresa puede tener problemas legales. Mitigación: Alguien de RRHH se encarga de estar al tanto de cambios y actualizar antes de correr la siguiente nómina.
+- Al pasar de manual a automático, RRHH puede dejar de validar los resultados y no darse cuenta de un error a tiempo. Mitigación: Que el equipo haga revisiones periódicas comparando recibos contra cálculos manuales.
+- Si al equipo de RRHH le parece complicado de usar, el sistema pasa a perder valor y el problema original no se resuelve. Mitigación: Incluir al equipo desde el inicio del desarrollo.
