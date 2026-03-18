@@ -33,3 +33,12 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 - Si la ley cambia los porcentajes de impuestos o bonos y nadie actualiza el sistema, los recibos van a estar mal y la empresa puede tener problemas legales. Mitigación: Alguien de RRHH se encarga de estar al tanto de cambios y actualizar antes de correr la siguiente nómina.
 - Al pasar de manual a automático, RRHH puede dejar de validar los resultados y no darse cuenta de un error a tiempo. Mitigación: Que el equipo haga revisiones periódicas comparando recibos contra cálculos manuales.
 - Si al equipo de RRHH le parece complicado de usar, el sistema pasa a perder valor y el problema original no se resuelve. Mitigación: Incluir al equipo desde el inicio del desarrollo.
+
+## Riesgos Técnico
+- La respuesta del sistema debe ser inmediata, caso contrario no habría ventaja sobre los cálculos manuales. Mitigación: garantizar que los cálculos y descarga de pdf tomen menos de 3 segundos.
+- Al depender de herramientas externas el sistema podría romperse. Mitigación: probar que los documentos se construyan con la información completa. 
+- El manejo inadecuado de decimales podría generar pagos irreales. Mitigación: definir el formato de los decimales.
+- Los datos incorrectos harán que nuestros cálculos fallen. MItigación: verificación de los datos de entrada.
+- La información de salida debe ser la misma para la pantalla como para el PDF, no pueden ser distintos. Mitigación: se debe calcular el salario una sola vez sin que haya cambios inesperados.
+
+
