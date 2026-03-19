@@ -76,3 +76,9 @@
     Then los datos del empleado permanecen sin cambios
     And el sistema informa que el salario bruto tiene que ser positivo
 ```
+___
+
+## HU-03 — Cálculo de salario neto 
+**Como** administrador de recursos humanos 
+**Quiero** calcular automáticamente el salario neto del empleado según su tipo de contrato 
+**Para** procesar la nómina sin intervención manual y sin riesgo de errores.
