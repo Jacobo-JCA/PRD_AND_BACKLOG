@@ -20,6 +20,10 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
         - tiempo completo = Se aplica 9.45% sobre el salario bruto
         - medio tiempo = Se aplica 9.45% sobre el salario bruto
         - servicios profesionales = Se aplica 8.00% sobre el salario bruto
+    - Regla de bonificación
+        - tiempo completo = Se aplica 8.33% sobre el salario bruto
+        - medio tiempo = Se aplica 8.33% sobre el salario bruto
+        - servicios profesionales = Se aplica 0% sobre el salario bruto
 - Mostrar el resultado del cálculo para que el usuario lo confirme antes de generar el documento.
 - Generar un documento PDF descargable con el desglose completo del salario neto.
 
