@@ -13,8 +13,6 @@
 | T02 | Crear tabla `contratos` con FK → empleados.id (tipo_contrato, fechas) | Media |
 
 
-**Justificación:** La complejidad se justifica por la cantidad de combinaciones que deben validarse en nombre y salario bruto.
-
 ### Task QA
 
 | ID | Tarea | Esfuerzo |
