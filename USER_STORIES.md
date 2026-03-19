@@ -142,3 +142,12 @@ ___
 **Como** administrador de recursos humanos <br> 
 **Quiero** generar un documento PDF descargable con el desglose completo del salario neto <br>
 **Para** contar con un comprobante formal que pueda entregar al empleado o archivar.
+### Criterios de aceptación
+
+## Generacion exitosa del PDF
+```gherkin
+    Given que la nomina del empleado fue calculada
+    And el administrador confirmo los datos del resumen
+    When el administrador genera el PDF
+    Then el sistema debe generar un PDF descargable con los siguientes datos: nombre, tipo de contrato, salario bruto, deduccion,     bonificacion y salario neto del empleado.
+```
