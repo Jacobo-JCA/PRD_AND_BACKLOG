@@ -107,3 +107,9 @@ ___
         Then el sistema debe calcular el salario neto aplicando 8.00% de deducción 
         And 0% de bonificación sobre el salario bruto
 ```
+___
+
+## HU-04 — Confirmación del resultado 
+**Como** administrador de recursos humanos <br>
+**Quiero** ver el resultado del cálculo antes de generar el documento <br>
+**Para** confirmar que los datos son correctos antes de emitir el recibo.
