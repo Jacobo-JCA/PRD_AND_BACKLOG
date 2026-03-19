@@ -7,7 +7,7 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 
 ## Objetivos
 * Automatizar el cálculo del salario neto de los empleados a partir de su salario bruto, eliminando la dependencia de procesos manuales en Excel.
-* Permitir revisar y corregir la información del empleado antes de procesar el cálculo, para garantizar que los datos sean correctos desde el inicio.
+* Permitir revisar y corregir la información del empleado antes de confirmar el cálculo, para garantizar que los datos sean correctos desde el inicio.
 * Facilitar el cálculo de nómina considerando distintos tipos de contrato laboral (tiempo completo, medio tiempo y freelance).
 * Mostrar un desglose detallado del cálculo para validar los resultados antes de emitir el documento final.
 * Generar un documento descargable con el resultado final.
