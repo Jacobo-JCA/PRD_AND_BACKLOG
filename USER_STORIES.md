@@ -113,3 +113,26 @@ ___
 **Como** administrador de recursos humanos <br>
 **Quiero** ver el resultado del cálculo antes de generar el documento <br>
 **Para** confirmar que los datos son correctos antes de emitir el recibo.
+
+### Criterios de aceptacion
+
+**Resumen mostrando el desglose del calculo**
+```gherkin
+    Given la nomina del empleado fue calculada
+    When el administrador accede al resumen del calculo
+    Then el sistema debe mostrar el nombre, tipo de contrato, salario bruto, deducciones, bonificacion y salario neto del empleado
+```
+**Confirmacion del resumen habilita la generacion del PDF**
+```gherkin
+    Given que la nomina del empleado fue calculada
+    And el administrador esta revisando el resumen
+    When el administrador confirma que los datos son correctos
+    Then el sistema debe habilitar la descargar del PDF
+```
+**No se puede generar el PDF sin confirmar el resumen**
+```gherkin
+    Given la nomina del empleado fue calculada
+    And el administrador no confirma los datos 
+    When el administrador intenta generar el PDF
+    Then el sistema debe informar que debe confirmar los datos antes de seguir
+```
