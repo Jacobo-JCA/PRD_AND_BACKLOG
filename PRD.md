@@ -16,6 +16,10 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 - Registrar la información básica del empleado necesaria para el cálculo de nómina.
 - Permitir al usuario corregir los datos ingresados antes de procesar el cálculo.
 - Calcular el salario neto del empleado según su tipo de contrato.
+    - Regla de deducción por impuestos
+        - tiempo completo = Se aplica 9.45% sobre el salario bruto
+        - medio tiempo = Se aplica 9.45% sobre el salario bruto
+        - servicios profesionales = Se aplica 8.00% sobre el salario bruto
 - Mostrar el resultado del cálculo para que el usuario lo confirme antes de generar el documento.
 - Generar un documento PDF descargable con el desglose completo del salario neto.
 
