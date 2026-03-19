@@ -136,3 +136,9 @@ ___
     When el administrador intenta generar el PDF
     Then el sistema debe informar que debe confirmar los datos antes de seguir
 ```
+___
+
+## HU-05 — Generación de PDF 
+**Como** administrador de recursos humanos <br> 
+**Quiero** generar un documento PDF descargable con el desglose completo del salario neto <br>
+**Para** contar con un comprobante formal que pueda entregar al empleado o archivar.
