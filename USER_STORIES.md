@@ -79,6 +79,6 @@
 ___
 
 ## HU-03 — Cálculo de salario neto 
-**Como** administrador de recursos humanos 
-**Quiero** calcular automáticamente el salario neto del empleado según su tipo de contrato 
+**Como** administrador de recursos humanos <br>
+**Quiero** calcular automáticamente el salario neto del empleado según su tipo de contrato <br>
 **Para** procesar la nómina sin intervención manual y sin riesgo de errores.
