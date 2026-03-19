@@ -76,6 +76,14 @@
     Then los datos del empleado permanecen sin cambios
     And el sistema informa que el salario bruto tiene que ser positivo
 ```
+**Bloqueo de correcion por nomina ya calculada**
+```gherkin
+Given el empleado esta registrado
+And la nómina del empleado fue calculada
+When el administrador intenta modificar datos del empleado
+Then el sistema no lo permite
+And informa que los datos no pueden modificarse porque la nómina ya fue calculada
+```
 ___
 
 ## HU-03 — Cálculo de salario neto 
@@ -107,6 +115,14 @@ ___
         Then el sistema debe calcular el salario neto aplicando 8.00% de deducción 
         And 0% de bonificación sobre el salario bruto
 ```
+**No permitir calculo de nomina si el empleado no esta registrado**
+```gherkin
+        Given no existe ningún empleado registrado en el sistema
+        When el administrador intenta procesar una nomina
+        Then el sistema no permite realizar el calculo
+        And informa que debe registrar un empleado antes de continuar
+```
+
 ___
 
 ## HU-04 — Confirmación del resultado 
