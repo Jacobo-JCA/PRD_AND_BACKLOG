@@ -10,6 +10,7 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 * Permitir revisar y corregir la información del empleado antes de procesar el cálculo, para garantizar que los datos sean correctos desde el inicio.
 * Facilitar el cálculo de nómina considerando distintos tipos de contrato laboral (tiempo completo, medio tiempo y freelance).
 * Mostrar un desglose detallado del cálculo para validar los resultados antes de emitir el documento final.
+* Generar un documento descargable con el resultado final.
 
 ## Alcance del MVP
 ### IN (MVP Scope)
