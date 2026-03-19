@@ -12,30 +12,30 @@
 **Registro exitoso del empleado**
 ```gherkin
     Given no existe el empleado en el sistema
-    When registra un empleado con sus datos necesarios (nombre, tipo de contrato y salario bruto)
+    When se registra un empleado con sus datos necesarios (nombre, tipo de contrato y salario bruto)
     Then el empleado queda guardado en el sistema
-    And el empleado queda habilitado para confirmar su nómina
+    And queda habilitado para confirmar su nómina
 ```
 **Registro fallido por falta de datos necesarios**
 ```gherkin
     Given no existe el empleado en el sistema
-    When intenta registrar un empleado sin ingresar datos necesarios
+    When se intenta registrar un empleado sin ingresar datos necesarios
     Then el sistema no permite guardar el empleado
     And notifica cuales son los datos necesarios
 ```
 **Registro fallido por salario bruto inválido**
 ```gherkin
-    Given no existe el empleado en el sistema
-    When intenta registrar un empleado con un salario bruto negativo o en cero
+    Given el empleado no existe en el sistema
+    When se intenta registrar al empleado con un salario bruto negativo o en cero
     Then el sistema no permite guardar el empleado
-    And informa que el salario bruto debe ser positivo
+    And notifica que el salario bruto debe ser positivo
 ```
 **Registro fallido por caracteres en nombre**
 ```gherkin
-    Given no existe el empleado en el sistema
-    When intenta registrar un empleado con un nombre que contiene caracteres
-    Then el sistema no permite guardar el empleado
-    And informa que el nombre no debe contener caracteres
+    Given el empleado no consta en el sistema
+    When se intenta registrar al empleado con un nombre que contiene caracteres especiales
+    Then el sistema no permite guardarlo
+    And notifica que el nombre no debe contener caracteres especiales
 ```
 ---
 
@@ -48,31 +48,31 @@
 
 **Correccion exitosa del nombre del empleado**
 ```gherkin
-    Given existe un empleado registrado con los datos necesarios (nombre, tipo de contrato y sueldo bruto)
-    And la nómina del empleado no fue confirmada
-    When el administrador cambia el nombre del empleado
+    Given el empleado esta registrado con los datos necesarios (nombre, tipo de contrato y sueldo bruto)
+    And la nómina no fue confirmada
+    When se cambia el nombre del empleado
     Then los datos del empleado quedan actualizados
 ```
 **Correccion exitosa del salario bruto del empleado**
 ```gherkin
-    Given existe un empleado registrado con los datos necesarios (nombre, tipo de contrato y sueldo bruto)
-    And la nómina del empleado no fue confirmar
-    When el administrador cambia el salario bruto positivo
-    Then los datos del empleado quedan actualizados
+    Given el empleado esta registrado
+    And la nómina del empleado no fue confirmada
+    When se actualiza el salario bruto con un valor positivo valido
+    Then los datos quedan actualizados con el nuevo valor
 ```
 **Correccion erronea por nombre invalido**
 ```gherkin
-    Given existe un empleado registrado con los datos necesarios (nombre, tipo de contrato y sueldo bruto)
-    And la nómina del empleado no fue confirmar
-    When el administrador intenta cambiar el nombre del empleado por uno que contiene caracteres especiales
+    Given el empleado esta registrado
+    And la nómina del empleado no fue confirmada
+    When se intenta cambiar el nombre del empleado por uno que contiene caracteres especiales
     Then los datos del empleado no quedan actualizados
-    And el sistema informa que el nombre no puede tener caracteres
+    And el sistema informa que el nombre no puede tener caracteres especiales
 ```
 **Correccion fallida por salario bruto invalido**
 ```gherkin
-    Given existe un empleado registrado con los datos necesarios (nombre, tipo de contrato y sueldo bruto)
-    And la nómina del empleado no fue confirmar
-    When el administrador cambia el salario bruto a menor a cero o cero
-    Then los datos del empleado no quedan actualizados
+    Given existe un empleado registrado con sus datos
+    And la nómina del empleado no fue confirmada
+    When se intenta actualizar el salario bruto con un valor negativo
+    Then los datos del empleado permanecen sin cambios
     And el sistema informa que el salario bruto tiene que ser positivo
 ```
