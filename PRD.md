@@ -3,7 +3,7 @@ Tema: Product Requirement Document (PRD), Refinamiento Ágil, Tasking, Estimaci�
 BDD (Gherkin)
 
 ## Visión:
-Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Humanos que hoy luchan con cálculos manuales lentos y propensos a errores en Excel. A diferencia de las herramientas genéricas, nuestra solución ofrece un cálculo exacto de salarios netos, deducciones de ley e incentivos de forma automatizada. Buscamos que el empleado tenga total claridad de su pago y que la empresa elimine el riesgo de multas legales, entregando en segundos lo que antes tomaba horas de revisión manual.
+Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Humanos que hoy luchan con cálculos manuales lentos y propensos a errores en Excel. A diferencia de otras herramientas, nuestra solución ofrece un cálculo exacto de salarios netos, deducciones de ley e incentivos de forma automatizada. Buscamos que el empleado tenga total claridad de su pago y que la empresa elimine el riesgo de multas legales, entregando en segundos lo que antes tomaba horas de revisión manual.
 
 ## Objetivos
 * Automatizar el cálculo del salario neto de los empleados a partir de su salario bruto, eliminando la dependencia de procesos manuales en Excel.
@@ -25,6 +25,7 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
         - medio tiempo = Se aplica 8.33% sobre el salario bruto
         - servicios profesionales = Se aplica 0% sobre el salario bruto
     - Regla de cálculo de salario neto = Fórmula Salario neto = Salario bruto − Deducción + Bonificación
+    - El resultado se calcula una sola vez y se reutiliza en el resumen y el PDF.
 - Mostrar el resultado del cálculo para que el usuario lo confirme antes de generar el documento.
 - Generar un documento PDF descargable con el desglose completo del salario neto.
 
