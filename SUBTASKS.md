@@ -17,7 +17,7 @@
 
 | ID | Tarea | Esfuerzo |
 |----|-------|----------|
-| T01 | Diseñar matriz de datos de prueba: nombre (caracteres especiales, números, longitud), salario bruto (negativo, cero, límites numéricos, decimales) y campos vacíos | Medio |
+| T01 | Diseñar matriz de datos de prueba: nombre (caracteres especiales, números), salario bruto (negativo, cero, decimales) y campos vacíos | Medio |
 | T02 | Diseñar casos de prueba para registro exitoso con combinaciones válidas de nombre, tipo de contrato y salario bruto verificando que retorna **HTTP 201** | Bajo |
 | T03 | Diseñar casos de prueba para campos obligatorios vacíos verificando que el sistema informe cuál falta y retorna **HTTP 400** | Medio |
 | T04 | Diseñar casos de prueba para salario bruto en cero o negativo verificando mensaje de error y que retorna **HTTP 400** | Bajo |
