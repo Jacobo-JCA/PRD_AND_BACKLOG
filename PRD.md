@@ -15,7 +15,7 @@ Nuestra Calculadora de Nómina está pensada para los analistas de Recursos Huma
 ## Alcance del MVP
 ### IN (MVP Scope)
 - Registrar la información básica del empleado necesaria para el cálculo de nómina.
-- Permitir al usuario corregir los datos ingresados antes de procesar el cálculo.
+- Permitir al usuario corregir los datos del empleado en cualquier momento antes de confirmar el cálculo.
 - Calcular el salario neto del empleado según su tipo de contrato.
     - Regla de deducción por impuestos
         - tiempo completo = Se aplica 9.45% sobre el salario bruto
