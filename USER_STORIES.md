@@ -22,3 +22,10 @@
     Then el sistema no permite guarda el empleado
     And informa cuales son los datos vacios
 ```
+
+---
+
+## HU-02 — Corrección de datos 
+**Como** administrador de recursos humanos <br>
+**Quiero** corregir los datos de un empleado antes de procesar el cálculo <br>
+**Para** asegurarme de que la información es correcta antes de obtener el resultado
