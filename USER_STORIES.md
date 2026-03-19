@@ -82,3 +82,28 @@ ___
 **Como** administrador de recursos humanos <br>
 **Quiero** calcular automáticamente el salario neto del empleado según su tipo de contrato <br>
 **Para** procesar la nómina sin intervención manual y sin riesgo de errores.
+
+### Criterios de aceptacion
+
+**Aplicacion correcta de bonificacion y deducciones para tipo de contrato tiempo completo**
+```gherkin
+        Given que existe un empleado registrado con un tipo de contrato de tiempo completo y un salario bruto definido
+        When se procesa la nomina del empleado
+        Then el sistema debe calcular el salario neto aplicando 9.45% de deduccion 
+        And 8.33% de bonificacion sobre el salario bruto
+```
+**Aplicacion correcta de bonificacion y deducciones para tipo de contrato medio tiempo**
+```gherkin
+        Given que existe un empleado registrado con un tipo de contrato de medio tiempo y un salario bruto definido
+        When se procesa la nomina del empleado
+        Then el sistema debe calcular el salario neto aplicando 9.45% de deduccion 
+        And 8.33% de bonificacion sobre el salario bruto
+```
+
+**Aplicacion correcta de bonificacion y deducciones para tipo de contrato servicios profesionales**
+```gherkin
+        Given que existe un empleado registrado con contrato de servicios profesionales y un salario bruto definido
+        When se procesa la nomina del empleado
+        Then el sistema debe calcular el salario neto aplicando 8.00% de deducción 
+        And 0% de bonificación sobre el salario bruto
+```
