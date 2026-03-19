@@ -11,27 +11,28 @@
 
 **Registro exitoso del empleado**
 ```gherkin
-    Given el administrador de recursos humanos
+    Given no existe el empleado en el sistema
     When registra un empleado con sus datos necesarios (nombre, tipo de contrato y salario bruto)
-    Then el empleado queda habilitado para procesar su nómina
+    Then el empleado queda guardado en el sistema
+    And el empleado queda habilitado para confirmar su nómina
 ```
 **Registro fallido por falta de datos necesarios**
 ```gherkin
-    Given el administrador de recursos humanos
+    Given no existe el empleado en el sistema
     When intenta registrar un empleado sin ingresar datos necesarios
-    Then el sistema no permite guarda el empleado
-    And informa cuales son los datos necesarios
+    Then el sistema no permite guardar el empleado
+    And notifica cuales son los datos necesarios
 ```
 **Registro fallido por salario bruto inválido**
 ```gherkin
-    Given el administrador de recursos humanos
+    Given no existe el empleado en el sistema
     When intenta registrar un empleado con un salario bruto negativo o en cero
     Then el sistema no permite guardar el empleado
     And informa que el salario bruto debe ser positivo
 ```
 **Registro fallido por caracteres en nombre**
 ```gherkin
-    Given el administrador de recursos humanos
+    Given no existe el empleado en el sistema
     When intenta registrar un empleado con un nombre que contiene caracteres
     Then el sistema no permite guardar el empleado
     And informa que el nombre no debe contener caracteres
