@@ -81,6 +81,16 @@
 | T06 | Validar reglas de negocio (deducciones, impuestos) y guardar resultado en nominas | Alta |
 | T07 | Configurar DTOs para Salario y resultado de Nómina | Baja |
 
+### Frontend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T08 | Crear formulario para registrar salario del empleado | Media |
+| T09 | Crear botón / acción para iniciar cálculo de salario neto | Baja |
+| T10 | Mostrar resultado del cálculo en pantalla | Media |
+
+---
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
