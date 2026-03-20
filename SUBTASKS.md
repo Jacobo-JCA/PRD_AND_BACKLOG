@@ -201,3 +201,6 @@
 | T01 | Diseñar caso de prueba verificando que el PDF se genera con los campos correctos (nombre, tipo de contrato, salario bruto, deducción, bonificación y salario neto) y descarga correctamente tras confirmar el resumen, retornando **HTTP 200** con `Content-Type: application/pdf` | Bajo |
 | T02 | Verificar que la generación del PDF es menor o igual a 3 segundos | Medio |
 | T03 | Verificar que el PDF se ve igual en distintos navegadores. Documentar lo encontrado | Bajo |
+| T04 | Diseñar caso de prueba verificando que la previsualización del PDF muestra todos los campos correctos antes de descargar | Bajo |
+| T05 | Diseñar caso de prueba verificando que tras la descarga exitosa el sistema muestra la notificacion | Bajo |
+| T06 | Diseñar caso de prueba verificando que POST /empleados/{id}/nominas/{idNomina}/generar-pdf retorna HTTP 400 o HTTP 403 si el resumen no fue confirmado | Bajo |
