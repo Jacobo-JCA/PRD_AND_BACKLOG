@@ -31,6 +31,16 @@
 
 ---
 
+## HU-02 — Corrección de datos
+
+> *Story Points:* 3
+
+### Database
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T01 | Verificar que tablas empleados, contratos y salarios soporten actualización (constraints y permisos) | Baja |
+
 
 ## Task QA
 
