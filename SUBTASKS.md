@@ -71,6 +71,16 @@
 | T01 | Crear tabla salarios con FK → empleados.id (salario_bruto, fecha_vigencia) | Media |
 | T02 | Crear tabla nominas con FK → empleados.id y salarios.id (periodo, salario_bruto, deducciones, salario_neto, fecha_generacion) | Alta |
 
+### Backend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T03 | Exponer endpoint POST /empleados/{id}/salarios → alta de salario | Media |
+| T04 | Exponer endpoint POST /empleados/{id}/calcularSalario → dispara el cálculo y persiste en nominas | Media |
+| T05 | Implementar lógica de cálculo según tipo de contrato (toma salario_bruto de salarios) | Alta |
+| T06 | Validar reglas de negocio (deducciones, impuestos) y guardar resultado en nominas | Alta |
+| T07 | Configurar DTOs para Salario y resultado de Nómina | Baja |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
