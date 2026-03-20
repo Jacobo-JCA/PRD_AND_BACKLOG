@@ -21,6 +21,16 @@
 | T05 | Exponer endpoint POST /empleados/{id}/contratos → alta de contrato | Media |
 | T06 | Configurar DTOs para Empleado y Contrato | Baja |
 
+### Frontend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T07 | Crear formulario para alta de empleado | Media |
+| T08 | Crear formulario para agregar contrato | Media |
+| T09 | Mostrar detalle del empleado con sus contratos | Baja |
+
+---
+
 
 ## Task QA
 
