@@ -186,6 +186,14 @@
 | T03 | Implementar servicio de generación de PDF (lee de nominas) | Alta |
 | T04 | Configurar DTO para descarga del archivo | Baja |
 
+### Frontend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T05 | Crear botón para generar y descargar PDF | Baja |
+| T06 | Vista para previsualizar PDF antes de descargar | Media |
+| T07 | Mostrar notificación de descarga exitosa | Baja |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
