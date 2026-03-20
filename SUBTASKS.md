@@ -178,6 +178,14 @@
 |-----|-------|----------|
 | T01 | No requiere cambios adicionales (usa datos de nominas) | Baja |
 
+### Backend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T02 | Exponer endpoint POST /empleados/{id}/nominas/{idNomina}/generar-pdf → genera PDF con desglose | Media |
+| T03 | Implementar servicio de generación de PDF (lee de nominas) | Alta |
+| T04 | Configurar DTO para descarga del archivo | Baja |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
