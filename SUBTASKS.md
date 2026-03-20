@@ -34,7 +34,7 @@
 | T01 | Diseñar casos de prueba para edición exitosa de nombre y salario bruto con nómina no calculada verificando que retorna **HTTP 200** | Bajo |
 | T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
 | T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
-| T04 | Que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar? Documentar lo encontrado | Medio |
+| T04 | Verificar que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar. Documentar lo encontrado | Medio |
 
 ---
 # HU-03 — Cálculo de salario neto
@@ -74,4 +74,4 @@
 |----|-------|----------|
 | T01 | Diseñar caso de prueba verificando que el PDF se genera con los campos correctos (nombre, tipo de contrato, salario bruto, deducción, bonificación y salario neto) y descarga correctamente tras confirmar el resumen, retornando **HTTP 200** con `Content-Type: application/pdf` | Bajo |
 | T02 | Verificar que la generación del PDF es menor o igual a 3 segundos | Medio |
-| T03 | El PDF se ve igual en distintos navegadores? | Bajo |
+| T03 | Verificar que el PDF se ve igual en distintos navegadores. Documentar lo encontrado | Bajo |
