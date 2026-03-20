@@ -35,3 +35,17 @@
 | T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
 | T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
 | T04 | Que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar? Documentar lo encontrado | Medio |
+
+---
+# HU-03 — Cálculo de salario neto
+
+
+## Task QA
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar matriz de datos de prueba con distintos salarios brutos para los 3 tipos de contrato calculando el resultado esperado manualmente | Alto |
+| T02 | Diseñar casos de prueba verificando fórmula para tiempo completo y medio tiempo: `neto = bruto − (bruto * 9.45%) + (bruto * 8.33%)` verificando que retorna **HTTP 200** | Medio |
+| T03 | Diseñar casos de prueba verificando fórmula para servicios profesionales: `neto = bruto − (bruto * 8.00%)` sin bonificación verificando que retorna **HTTP 200** | Medio |
+| T04 | Diseñar casos de prueba verificando redondeo a 2 decimales en todos los tipos de contrato | Medio |
+| T05 | Diseñar caso de prueba verificando que el sistema bloquea el cálculo si no existe un empleado registrado previamente y retorna **HTTP 404** | Bajo |
