@@ -167,3 +167,10 @@ ___
     When el administrador genera el PDF
     Then el sistema debe generar un PDF descargable con los siguientes datos: nombre, tipo de contrato, salario bruto, deduccion,     bonificacion y salario neto del empleado.
 ```
+```gherkin
+    Given que la nomina del empleado fue calculada
+    And el administrador confirmo los datos del resumen
+    When el administrador descarga el PDF
+    Then el sistema debe notificar descarga exitosa
+```
+
