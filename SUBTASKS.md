@@ -101,6 +101,13 @@
 |-----|-------|----------|
 | T01 | No requiere cambios adicionales (consulta datos de nominas) | Baja |
 
+### Backend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T02 | Exponer endpoint GET /empleados/{id}/nominas/{idNomina} → obtener resultado con desglose | Baja |
+| T03 | Configurar DTO de respuesta con desglose (salario_bruto, deducciones, salario_neto) | Baja |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
