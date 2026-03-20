@@ -100,6 +100,9 @@
 | T03 | Diseñar casos de prueba para campos obligatorios vacíos verificando que el sistema informe cuál falta y retorna **HTTP 400** | Medio |
 | T04 | Diseñar casos de prueba para salario bruto en cero o negativo verificando mensaje de error y que retorna **HTTP 400** | Bajo |
 | T05 | Diseñar casos de prueba para nombre con caracteres especiales o numéricos verificando rechazo, mensaje de error y que retorna **HTTP 400** | Bajo |
+| T06 | Diseñar casos de prueba para verificar que GET /empleados/{id} devuelve el detalle del empleado con sus contratos y **HTTP 200**, y **HTTP 404** si no existe | Bajo |
+| T07 | Diseñar casos de prueba para POST /empleados/{id}/contratos verificando alta exitosa con **HTTP 201** y error con **HTTP 400** para datos inválidos | Medio |
+| T08 | Diseñar caso de prueba verificando que no se puede crear un contrato si el empleado no existe | Bajo |
 
 ---
 # HU-02 — Corrección de datos
