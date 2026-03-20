@@ -143,6 +143,9 @@
 | T03 | Diseñar casos de prueba verificando fórmula para servicios profesionales: `neto = bruto − (bruto * 8.00%)` sin bonificación verificando que retorna **HTTP 200** | Medio |
 | T04 | Diseñar casos de prueba verificando redondeo a 2 decimales en todos los tipos de contrato | Medio |
 | T05 | Diseñar caso de prueba verificando que el sistema bloquea el cálculo si no existe un empleado registrado previamente y retorna **HTTP 404** | Bajo |
+| T06 | Diseñar casos de prueba para POST /empleados/{id}/salarios verificando alta exitosa con **HTTP 201** y error **HTTP 400** para datos inválidos | Bajo |
+| T07 | Diseñar caso de prueba verificando que tras el cálculo el resultado queda persistido correctamente en nóminas con todos los campos: salario_bruto, deducciones, bonificación y salario_neto | Medio |
+| T08 | Diseñar caso de prueba verificando que los campos fecha_vigencia y periodo se guardan al registrar el salario y calcular la nómina | Bajo |
 
 ---
 # HU-04 — Confirmación del resultado
