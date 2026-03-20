@@ -12,6 +12,15 @@
 | T01 | Crear tabla `empleados` (id, nombre, fecha_creacion) | Media |
 | T02 | Crear tabla `contratos` con FK → empleados.id (tipo_contrato, fechas) | Media |
 
+### Backend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T03 | Exponer endpoint POST /empleados → alta de empleado | Media |
+| T04 | Exponer endpoint GET /empleados/{id} → detalle de empleado con contratos | Media |
+| T05 | Exponer endpoint POST /empleados/{id}/contratos → alta de contrato | Media |
+| T06 | Configurar DTOs para Empleado y Contrato | Baja |
+
 
 ## Task QA
 
