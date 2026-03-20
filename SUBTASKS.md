@@ -29,6 +29,19 @@
 | T08 | Crear formulario para agregar contrato | Media |
 | T09 | Mostrar detalle del empleado con sus contratos | Baja |
 
+## Task QA
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar matriz de datos de prueba: nombre (caracteres especiales, números), salario bruto (negativo, cero, decimales) y campos vacíos | Medio |
+| T02 | Diseñar casos de prueba para registro exitoso con combinaciones válidas de nombre, tipo de contrato y salario bruto verificando que retorna **HTTP 201** | Bajo |
+| T03 | Diseñar casos de prueba para campos obligatorios vacíos verificando que el sistema informe cuál falta y retorna **HTTP 400** | Medio |
+| T04 | Diseñar casos de prueba para salario bruto en cero o negativo verificando mensaje de error y que retorna **HTTP 400** | Bajo |
+| T05 | Diseñar casos de prueba para nombre con caracteres especiales o numéricos verificando rechazo, mensaje de error y que retorna **HTTP 400** | Bajo |
+| T06 | Diseñar casos de prueba para verificar que GET /empleados/{id} devuelve el detalle del empleado con sus contratos y **HTTP 200**, y **HTTP 404** si no existe | Bajo |
+| T07 | Diseñar casos de prueba para POST /empleados/{id}/contratos verificando alta exitosa con **HTTP 201** y error con **HTTP 400** para datos inválidos | Medio |
+| T08 | Diseñar caso de prueba verificando que no se puede crear un contrato si el empleado no existe | Bajo |
+
 ---
 
 ## HU-02 — Corrección de datos
@@ -57,6 +70,20 @@
 | T06 | Crear formulario de edición de datos del empleado | Baja |
 | T07 | Crear formulario de edición de contratos y salarios | Baja |
 | T08 | Mostrar mensajes de confirmación de cambios | Baja |
+
+
+## Task QA 
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar casos de prueba para edición exitosa de nombre y salario bruto con nómina no calculada verificando que retorna **HTTP 200** | Bajo |
+| T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
+| T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
+| T04 | Verificar que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar. Documentar lo encontrado | Medio |
+| T05 | Diseñar casos de prueba para PUT /empleados/{id}/contratos/{idContrato} verificando que la edición fue exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
+| T06 | Diseñar casos de prueba para PUT /empleados/{id}/salarios/{idSalario} verificando edición exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
+| T07 | Diseñar caso de prueba verificando que tras una edición exitosa el sistema muestra el mensaje de confirmación de cambios | Bajo |
+
 
 ---
 
@@ -89,6 +116,20 @@
 | T09 | Crear botón / acción para iniciar cálculo de salario neto | Baja |
 | T10 | Mostrar resultado del cálculo en pantalla | Media |
 
+## Task QA
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar matriz de datos de prueba con distintos salarios brutos para los 3 tipos de contrato calculando el resultado esperado manualmente | Alto |
+| T02 | Diseñar casos de prueba verificando fórmula para tiempo completo y medio tiempo: `neto = bruto − (bruto * 9.45%) + (bruto * 8.33%)` verificando que retorna **HTTP 200** | Medio |
+| T03 | Diseñar casos de prueba verificando fórmula para servicios profesionales: `neto = bruto − (bruto * 8.00%)` sin bonificación verificando que retorna **HTTP 200** | Medio |
+| T04 | Diseñar casos de prueba verificando redondeo a 2 decimales en todos los tipos de contrato | Medio |
+| T05 | Diseñar caso de prueba verificando que el sistema bloquea el cálculo si no existe un empleado registrado previamente y retorna **HTTP 404** | Bajo |
+| T06 | Diseñar casos de prueba para POST /empleados/{id}/salarios verificando alta exitosa con **HTTP 201** y error **HTTP 400** para datos inválidos | Bajo |
+| T07 | Diseñar caso de prueba verificando que tras el cálculo el resultado queda persistido correctamente en nóminas con todos los campos: salario_bruto, deducciones, bonificación y salario_neto | Medio |
+| T08 | Diseñar caso de prueba verificando que los campos fecha_vigencia y periodo se guardan al registrar el salario y calcular la nómina | Bajo |
+
+
 ---
 
 ## HU-04 — Confirmación del resultado
@@ -114,59 +155,6 @@
 |-----|-------|----------|
 | T05 | Crear vista para mostrar desglose de nómina antes de confirmar | Baja |
 | T06 | Botón de confirmación para aprobar el resultado | Baja |
-
----
-
-## Task QA
-
-| ID | Tarea | Esfuerzo |
-|----|-------|----------|
-| T01 | Diseñar matriz de datos de prueba: nombre (caracteres especiales, números), salario bruto (negativo, cero, decimales) y campos vacíos | Medio |
-| T02 | Diseñar casos de prueba para registro exitoso con combinaciones válidas de nombre, tipo de contrato y salario bruto verificando que retorna **HTTP 201** | Bajo |
-| T03 | Diseñar casos de prueba para campos obligatorios vacíos verificando que el sistema informe cuál falta y retorna **HTTP 400** | Medio |
-| T04 | Diseñar casos de prueba para salario bruto en cero o negativo verificando mensaje de error y que retorna **HTTP 400** | Bajo |
-| T05 | Diseñar casos de prueba para nombre con caracteres especiales o numéricos verificando rechazo, mensaje de error y que retorna **HTTP 400** | Bajo |
-| T06 | Diseñar casos de prueba para verificar que GET /empleados/{id} devuelve el detalle del empleado con sus contratos y **HTTP 200**, y **HTTP 404** si no existe | Bajo |
-| T07 | Diseñar casos de prueba para POST /empleados/{id}/contratos verificando alta exitosa con **HTTP 201** y error con **HTTP 400** para datos inválidos | Medio |
-| T08 | Diseñar caso de prueba verificando que no se puede crear un contrato si el empleado no existe | Bajo |
-
----
-# HU-02 — Corrección de datos
-
-
-## Task QA 
-
-| ID | Tarea | Esfuerzo |
-|----|-------|----------|
-| T01 | Diseñar casos de prueba para edición exitosa de nombre y salario bruto con nómina no calculada verificando que retorna **HTTP 200** | Bajo |
-| T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
-| T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
-| T04 | Verificar que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar. Documentar lo encontrado | Medio |
-| T05 | Diseñar casos de prueba para PUT /empleados/{id}/contratos/{idContrato} verificando que la edición fue exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
-| T06 | Diseñar casos de prueba para PUT /empleados/{id}/salarios/{idSalario} verificando edición exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
-| T07 | Diseñar caso de prueba verificando que tras una edición exitosa el sistema muestra el mensaje de confirmación de cambios | Bajo |
-
----
-# HU-03 — Cálculo de salario neto
-
-
-## Task QA
-
-| ID | Tarea | Esfuerzo |
-|----|-------|----------|
-| T01 | Diseñar matriz de datos de prueba con distintos salarios brutos para los 3 tipos de contrato calculando el resultado esperado manualmente | Alto |
-| T02 | Diseñar casos de prueba verificando fórmula para tiempo completo y medio tiempo: `neto = bruto − (bruto * 9.45%) + (bruto * 8.33%)` verificando que retorna **HTTP 200** | Medio |
-| T03 | Diseñar casos de prueba verificando fórmula para servicios profesionales: `neto = bruto − (bruto * 8.00%)` sin bonificación verificando que retorna **HTTP 200** | Medio |
-| T04 | Diseñar casos de prueba verificando redondeo a 2 decimales en todos los tipos de contrato | Medio |
-| T05 | Diseñar caso de prueba verificando que el sistema bloquea el cálculo si no existe un empleado registrado previamente y retorna **HTTP 404** | Bajo |
-| T06 | Diseñar casos de prueba para POST /empleados/{id}/salarios verificando alta exitosa con **HTTP 201** y error **HTTP 400** para datos inválidos | Bajo |
-| T07 | Diseñar caso de prueba verificando que tras el cálculo el resultado queda persistido correctamente en nóminas con todos los campos: salario_bruto, deducciones, bonificación y salario_neto | Medio |
-| T08 | Diseñar caso de prueba verificando que los campos fecha_vigencia y periodo se guardan al registrar el salario y calcular la nómina | Bajo |
-
----
-# HU-04 — Confirmación del resultado
-
-
 
 ## Task QA
 
