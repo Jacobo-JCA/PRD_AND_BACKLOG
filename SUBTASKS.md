@@ -34,5 +34,4 @@
 | T01 | Diseñar casos de prueba para edición exitosa de nombre y salario bruto con nómina no calculada verificando que retorna **HTTP 200** | Bajo |
 | T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
 | T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
-| T04 | Diseñar casos de prueba de regresión verificando que las validaciones de HU-01 siguen aplicando al editar | Medio |
-| T05 | Que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar? Documentar lo encontrado | Medio |
+| T04 | Que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar? Documentar lo encontrado | Medio |
