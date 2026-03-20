@@ -164,6 +164,7 @@
 | T02 | Diseñar caso de prueba verificando que la confirmación del resumen habilita la descarga del PDF | Bajo |
 | T03 | Diseñar caso de prueba verificando que sin confirmar el resumen el sistema bloquea la generación del PDF, informa al usuario y retorna **HTTP 400** | Bajo |
 | T04 | Diseñar caso de prueba verificando que los datos persistidos son los mismos que los que muestra el resumen | Bajo |
+| T05 | Diseñar casos de prueba verificando que GET /empleados/{id}/nominas/{idNomina} devuelve el desglose completo con **HTTP 200**, y **HTTP 404** si la nómina no existe | Bajo |
 
 ---
 
