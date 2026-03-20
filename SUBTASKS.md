@@ -126,6 +126,9 @@
 | T02 | Diseñar casos de prueba para edición inválida (nombre con caracteres especiales, salario en cero o negativo) verificando que no se actualiza y retorna **HTTP 400** | Bajo |
 | T03 | Diseñar caso de prueba verificando que no se puede editar ningún dato si la nómina ya fue calculada y retorna **HTTP 403** | Medio |
 | T04 | Verificar que pasa si la nomina cambia a calculada mientras Recursos Humanos esta en el formulario de editar. Documentar lo encontrado | Medio |
+| T05 | Diseñar casos de prueba para PUT /empleados/{id}/contratos/{idContrato} verificando que la edición fue exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
+| T06 | Diseñar casos de prueba para PUT /empleados/{id}/salarios/{idSalario} verificando edición exitosa con **HTTP 200** y error con **HTTP 400** para datos inválidos | Bajo |
+| T07 | Diseñar caso de prueba verificando que tras una edición exitosa el sistema muestra el mensaje de confirmación de cambios | Bajo |
 
 ---
 # HU-03 — Cálculo de salario neto
