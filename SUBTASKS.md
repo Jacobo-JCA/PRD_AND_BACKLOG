@@ -91,6 +91,16 @@
 
 ---
 
+## HU-04 — Confirmación del resultado
+
+> *Story Points:* 2
+
+### Database
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T01 | No requiere cambios adicionales (consulta datos de nominas) | Baja |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
