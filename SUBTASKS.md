@@ -166,8 +166,16 @@
 | T04 | Diseñar caso de prueba verificando que los datos persistidos son los mismos que los que muestra el resumen | Bajo |
 
 ---
+
 # HU-05 — Generación de PDF
 
+> *Story Points:* 3
+
+### Database
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T01 | No requiere cambios adicionales (usa datos de nominas) | Baja |
 
 ## Task QA
 
