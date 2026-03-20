@@ -50,6 +50,16 @@
 | T04 | Exponer endpoint PUT /empleados/{id}/salarios/{idSalario} → corrección de salario | Baja |
 | T05 | Configurar DTOs para actualización de Empleado, Contrato y Salario | Baja |
 
+### Frontend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T06 | Crear formulario de edición de datos del empleado | Baja |
+| T07 | Crear formulario de edición de contratos y salarios | Baja |
+| T08 | Mostrar mensajes de confirmación de cambios | Baja |
+
+---
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
