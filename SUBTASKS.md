@@ -49,3 +49,19 @@
 | T03 | Diseñar casos de prueba verificando fórmula para servicios profesionales: `neto = bruto − (bruto * 8.00%)` sin bonificación verificando que retorna **HTTP 200** | Medio |
 | T04 | Diseñar casos de prueba verificando redondeo a 2 decimales en todos los tipos de contrato | Medio |
 | T05 | Diseñar caso de prueba verificando que el sistema bloquea el cálculo si no existe un empleado registrado previamente y retorna **HTTP 404** | Bajo |
+
+---
+# HU-04 — Confirmación del resultado
+
+
+
+## Task QA
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar caso de prueba verificando que el resumen muestra todos los campos correctos: nombre, tipo de contrato, salario bruto, deducción, bonificación y salario neto | Bajo |
+| T02 | Diseñar caso de prueba verificando que la confirmación del resumen habilita la descarga del PDF | Bajo |
+| T03 | Diseñar caso de prueba verificando que sin confirmar el resumen el sistema bloquea la generación del PDF, informa al usuario y retorna **HTTP 400** | Bajo |
+| T04 | Diseñar caso de prueba verificando que los datos persistidos son los mismos que los que muestra el resumen | Bajo |
+
+---
