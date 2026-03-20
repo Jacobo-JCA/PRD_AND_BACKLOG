@@ -41,6 +41,14 @@
 |-----|-------|----------|
 | T01 | Verificar que tablas empleados, contratos y salarios soporten actualización (constraints y permisos) | Baja |
 
+### Backend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T02 | Exponer endpoint PUT /empleados/{id} → corrección de datos del empleado | Baja |
+| T03 | Exponer endpoint PUT /empleados/{id}/contratos/{idContrato} → corrección de contrato | Baja |
+| T04 | Exponer endpoint PUT /empleados/{id}/salarios/{idSalario} → corrección de salario | Baja |
+| T05 | Configurar DTOs para actualización de Empleado, Contrato y Salario | Baja |
 
 ## Task QA
 
