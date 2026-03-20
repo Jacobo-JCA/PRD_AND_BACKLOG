@@ -1,9 +1,9 @@
 
 # HU-01 — Registro de empleados con contratos
 
-## Task Dev
-
 > **Story Points:** 5
+
+## Task Dev
 
 ### Database
 
@@ -65,3 +65,13 @@
 | T04 | Diseñar caso de prueba verificando que los datos persistidos son los mismos que los que muestra el resumen | Bajo |
 
 ---
+# HU-05 — Generación de PDF
+
+
+## Task QA
+
+| ID | Tarea | Esfuerzo |
+|----|-------|----------|
+| T01 | Diseñar caso de prueba verificando que el PDF se genera con los campos correctos (nombre, tipo de contrato, salario bruto, deducción, bonificación y salario neto) y descarga correctamente tras confirmar el resumen, retornando **HTTP 200** con `Content-Type: application/pdf` | Bajo |
+| T02 | Verificar que la generación del PDF es menor o igual a 3 segundos | Medio |
+| T03 | El PDF se ve igual en distintos navegadores? | Bajo |
