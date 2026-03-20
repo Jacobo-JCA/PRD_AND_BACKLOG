@@ -108,6 +108,15 @@
 | T02 | Exponer endpoint GET /empleados/{id}/nominas/{idNomina} → obtener resultado con desglose | Baja |
 | T03 | Configurar DTO de respuesta con desglose (salario_bruto, deducciones, salario_neto) | Baja |
 
+### Frontend
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T05 | Crear vista para mostrar desglose de nómina antes de confirmar | Baja |
+| T06 | Botón de confirmación para aprobar el resultado | Baja |
+
+---
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
