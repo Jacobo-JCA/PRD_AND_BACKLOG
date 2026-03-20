@@ -60,6 +60,17 @@
 
 ---
 
+## HU-03 — Cálculo de salario neto
+
+> *Story Points:* 8
+
+### Database
+
+| ID  | Tarea | Esfuerzo |
+|-----|-------|----------|
+| T01 | Crear tabla salarios con FK → empleados.id (salario_bruto, fecha_vigencia) | Media |
+| T02 | Crear tabla nominas con FK → empleados.id y salarios.id (periodo, salario_bruto, deducciones, salario_neto, fecha_generacion) | Alta |
+
 ## Task QA
 
 | ID | Tarea | Esfuerzo |
