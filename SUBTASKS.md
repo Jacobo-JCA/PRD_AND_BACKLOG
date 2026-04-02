@@ -1,8 +1,7 @@
 
 # HU-01 — Registro de empleados con contratos
 
-> **Story Points:** 5
-Justificacion: Se selecciono este puntaje por la creacion de tablas y relaciones, y ademas es el inicio de nuestro flujo, la creacion del empleado.
+> **Story Points:** 5 *(definido en USER_STORIES — HU-01)*
 
 ## Task Dev
 
@@ -47,8 +46,7 @@ Justificacion: Se selecciono este puntaje por la creacion de tablas y relaciones
 
 ## HU-02 — Corrección de datos
 
-> *Story Points:* 3
-Justificacion: Se selecciono este puntaje porque solo depende de que la edición solo sea posible antes de confirmar el cálculo
+> **Story Points:** 3 *(definido en USER_STORIES — HU-02)*
 
 ### Database
 
@@ -91,8 +89,7 @@ Justificacion: Se selecciono este puntaje porque solo depende de que la edición
 
 ## HU-03 — Cálculo de salario neto
 
-> *Story Points:* 8
-Justificacion: Se selecciono este puntaje porque este es el nucleo del sistema,la logica de negocio y calculos de verificacion
+> **Story Points:** 8 *(definido en USER_STORIES — HU-03)*
 
 ### Database
 
@@ -137,8 +134,7 @@ Justificacion: Se selecciono este puntaje porque este es el nucleo del sistema,l
 
 ## HU-04 — Confirmación del resultado
 
-> *Story Points:* 2
-Justificacion:Se selecciono este puntaje porque no hay dificultad alguna en la creacion y logica, solo es consultar y mostrar los datos
+> **Story Points:** 2 *(definido en USER_STORIES — HU-04)*
 
 ### Database
 
@@ -174,8 +170,8 @@ Justificacion:Se selecciono este puntaje porque no hay dificultad alguna en la c
 
 # HU-05 — Generación de PDF
 
-> *Story Points:* 3
-Justificacion: Se selecciono este puntaje porque solo hay complejidad en la creacion del pdf
+> **Story Points:** 3 *(definido en USER_STORIES — HU-05)*
+
 ### Database
 
 | ID  | Tarea | Esfuerzo |
