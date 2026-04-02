@@ -3,6 +3,10 @@
 ---
 
 ## HU-01 — Registro de empleado 
+
+> **Story Points:** 5
+Justificacion: Se selecciono este puntaje por la creacion de tablas y relaciones, y ademas es el inicio de nuestro flujo, la creacion del empleado.
+
 **Como** administrador de recursos humanos <br>
 **Quiero** registrar los datos básicos del empleado <br>
 **Para** contar con la información necesaria antes de iniciar el cálculo de nómina.
@@ -40,6 +44,10 @@
 ---
 
 ## HU-02 — Corrección de datos 
+
+> *Story Points:* 3
+Justificacion: Se selecciono este puntaje porque solo depende de que la edición solo sea posible antes de confirmar el cálculo
+
 **Como** administrador de recursos humanos <br>
 **Quiero** corregir los datos de un empleado antes de confirmar el cálculo <br>
 **Para** asegurarme de que la información es correcta antes de obtener el resultado
@@ -87,6 +95,10 @@ And informa que los datos no pueden modificarse porque la nómina ya fue calcula
 ___
 
 ## HU-03 — Cálculo de salario neto 
+
+> *Story Points:* 8
+Justificacion: Se selecciono este puntaje porque este es el nucleo del sistema,la logica de negocio y calculos de verificacion
+
 **Como** administrador de recursos humanos <br>
 **Quiero** calcular automáticamente el salario neto del empleado según su tipo de contrato <br>
 **Para** procesar la nómina sin intervención manual y sin riesgo de errores.
@@ -126,6 +138,10 @@ ___
 ___
 
 ## HU-04 — Confirmación del resultado 
+
+> *Story Points:* 2
+Justificacion:Se selecciono este puntaje porque no hay dificultad alguna en la creacion y logica, solo es consultar y mostrar los datos
+
 **Como** administrador de recursos humanos <br>
 **Quiero** ver el resultado del cálculo antes de generar el documento <br>
 **Para** confirmar que los datos son correctos antes de emitir el recibo.
@@ -155,6 +171,10 @@ ___
 ___
 
 ## HU-05 — Generación de PDF 
+
+> *Story Points:* 3
+Justificacion: Se selecciono este puntaje porque solo hay complejidad en la creacion del pdf
+
 **Como** administrador de recursos humanos <br> 
 **Quiero** generar un documento PDF descargable con el desglose completo del salario neto <br>
 **Para** contar con un comprobante formal que pueda entregar al empleado o archivar.
