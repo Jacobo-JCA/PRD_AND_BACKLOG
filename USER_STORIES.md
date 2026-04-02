@@ -107,25 +107,28 @@ Justificacion: Se selecciono este puntaje porque este es el nucleo del sistema,l
 
 **Aplicacion correcta de bonificacion y deducciones para tipo de contrato tiempo completo**
 ```gherkin
-        Given que existe un empleado registrado con un tipo de contrato de tiempo completo y un salario bruto definido
-        When se procesa la nomina del empleado
-        Then el sistema debe calcular el salario neto aplicando 9.45% de deduccion 
-        And 8.33% de bonificacion sobre el salario bruto
+        Given un empleado registrado con contrato de tiempo completo y salario bruto de 1000.00
+        When se procesa la nómina del empleado
+        Then la deducción aplicada es 94.50
+        And la bonificación aplicada es 83.30
+        And el salario neto es 988.80
 ```
 **Aplicacion correcta de bonificacion y deducciones para tipo de contrato medio tiempo**
 ```gherkin
-        Given que existe un empleado registrado con un tipo de contrato de medio tiempo y un salario bruto definido
-        When se procesa la nomina del empleado
-        Then el sistema debe calcular el salario neto aplicando 9.45% de deduccion 
-        And 8.33% de bonificacion sobre el salario bruto
+        Given un empleado registrado con contrato de medio tiempo y salario bruto de 2000.00
+        When se procesa la nómina del empleado
+        Then la deducción aplicada es 189.00
+        And la bonificación aplicada es 166.60
+        And el salario neto es 1977.60
 ```
 
 **Aplicacion correcta de bonificacion y deducciones para tipo de contrato servicios profesionales**
 ```gherkin
-        Given que existe un empleado registrado con contrato de servicios profesionales y un salario bruto definido
-        When se procesa la nomina del empleado
-        Then el sistema debe calcular el salario neto aplicando 8.00% de deducción 
-        And 0% de bonificación sobre el salario bruto
+        Given un empleado registrado con contrato de servicios profesionales y salario bruto de 1500.00
+        When se procesa la nómina del empleado
+        Then la deducción aplicada es 120.00
+        And la bonificación aplicada es 0.00
+        And el salario neto es 1380.00
 ```
 **No permitir calculo de nomina si el empleado no esta registrado**
 ```gherkin
