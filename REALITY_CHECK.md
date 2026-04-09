@@ -248,19 +248,6 @@ Cada criterio de aceptación de las USER_STORIES tiene al menos un caso de prueb
 
 ---
 
-### 4.7 Riesgo residual conocido y documentado
-
-El equipo de QA entrega el MVP con los siguientes riesgos conocidos y explícitamente documentados, sin ocultar deuda de calidad:
-
-| Riesgo residual | Severidad | Acción sugerida para próximo sprint |
-|---|---|---|
-| TC-040 (race condition) sin automatización | Media | Implementar con herramienta de intercepción de requests |
-| Consistencia visual del PDF entre navegadores (TC-051) no ejecutado | Baja | Ejecutar manual en Chrome, Firefox y Edge antes del primer despliegue a producción |
-
----
-
----
-
 ## 5. Lecciones aprendidas
 
 | # | Lección                                                                                                    | Aplicación futura                                                              |
